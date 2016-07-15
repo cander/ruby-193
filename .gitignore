@@ -1,0 +1,3 @@
+.*.swp
+# don't actually want to push our Gemfiles
+Gemfile*

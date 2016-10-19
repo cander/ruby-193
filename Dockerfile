@@ -5,6 +5,7 @@
 
 FROM ubuntu:14.04
 MAINTAINER Charles Anderson "master.sparkle@gmail.com"
+ENV REFRESHED_AT 2016-10-17
 
 # basic packages for Ruby development with native extensions
 RUN apt-get update \
@@ -12,7 +13,8 @@ RUN apt-get update \
     git build-essential ruby1.9.3 ruby-dev build-essential
 
 # extra packages our gems use
-RUN apt-get install -y libqrencode-dev libxml2-dev libxslt1-dev libmysqlclient-dev
+RUN apt-get install -y libqrencode-dev libxml2-dev libxslt1-dev \
+            libmysqlclient-dev imagemagick
 
 # our current version of Bundler
 RUN gem install bundler --no-ri --no-rdoc --version 1.11.2

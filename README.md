@@ -8,5 +8,9 @@ tools and packages are left installed in the image - i.e., no effort has
 been made to clean up any packages after the initial install to reduce the
 image size.
 
+Check out the
+[Dockerfile](https://github.com/cander/ruby-193/blob/master/Dockerfile) for
+the details.
+
 Enjoy,
 Charles.
